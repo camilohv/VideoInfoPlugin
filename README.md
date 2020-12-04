@@ -1,3 +1,3 @@
-# dateToByte
+# VideoInfoPlugin
 "# VideoInfoPlugin" 
 "# VideoInfoPlugin" 
