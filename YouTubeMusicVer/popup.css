@@ -1,0 +1,19 @@
+@font-face { font-family: TRChandwriting; src: url('TRChandwriting.otf'); } 
+body {
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    background: green;
+    font-family: TRChandwriting, "UD Digi Kyokasho NK-R";
+    overflow: hidden;
+}
+
+#title {
+    font-size: 50px;
+}
+
+#channel {
+    font-size: 40px;
+    height: 40px;
+}
+
+

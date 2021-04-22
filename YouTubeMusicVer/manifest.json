@@ -1,0 +1,31 @@
+{
+    "name": "YouTube Info Plugin",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+      /*
+      Note: Have extension work with youtube and youtube music differently. Loads in different script depending on which website you are using.
+
+      Currently the extension can only handle one script at a time
+      {
+        // youtube 
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["yt_content.js"]
+      },
+      */
+      
+      {
+        // youtube music
+        "matches": ["https://*.music.youtube.com/*"],
+        "js": ["ytm_content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_title": "YouTube Video Info",
+      "css": ["popup.css"]
+    },
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "permissions": ["tabs", "browsingData"]
+  }
